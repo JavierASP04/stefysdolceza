@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stefy's Dolcezza | Repostería de Autor</title>
+    <meta name="description"
+        content="Tortas y postres artesanales con un toque de magia. En Stefy's Dolcezza creamos dulces momentos para tus ocasiones especiales.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Remixicons para iconos hermosos y ligeros -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header & Nav -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                𝐒𝐭𝐞𝐟𝐲’𝐬 𝐃𝐨𝐥𝐜𝐞𝐳𝐳𝐚
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#inicio" class="nav__link active-link">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#especialidades" class="nav__link">Especialidades</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#nosotros" class="nav__link">Nosotros</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#testimonios" class="nav__link">Testimonios</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__btns">
+                <a href="#contacto" class="btn btn--small">Hacer Pedido</a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero section" id="inicio">
+            <div class="hero__bg"></div>
+            <div class="container hero__container grid">
+                <div class="hero__data reveal-left">
+                    <span class="hero__subtitle">Repostería Artesanal</span>
+                    <h1 class="hero__title">
+                        El lado más <span>dulce</span> <br> de la vida
+                    </h1>
+                    <p class="hero__description">
+                        Descubre nuestra selección de tortas y postres, donde cada bocado es una obra de arte diseñada
+                        para enamorar tu paladar.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#contacto" class="btn">Solicitar Cotización <i class="ri-arrow-right-line"></i></a>
+                        <a href="#especialidades" class="btn btn--outline">Ver Menú</a>
+                    </div>
+                </div>
+
+                <div class="hero__img-container reveal-right">
+                    <!-- Glassmorphism card flotante -->
+                    <div class="hero__glass-card">
+                        <div class="glass-card__content">
+                            <i class="ri-star-fill"></i>
+                            <div>
+                                <h4>100% Calidad</h4>
+                                <span>Ingredientes premium</span>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="torta_hero.jpeg" alt="Torta espectacular de Stefy's Dolcezza" class="hero__img">
+                    <!-- PONER IMAGEN AQUI: reemplaza "torta_hero.jpeg" con tu foto para el inicio (sugerencia: 400x600px) -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Especialidades Section -->
+        <section class="specialties section" id="especialidades">
+            <div class="container">
+                <div class="section__title-container reveal-fade">
+                    <span class="section__subtitle">Nuestro Menú</span>
+                    <h2 class="section__title">Especialidades que Cautivan</h2>
+                </div>
+
+                <div class="specialties__container grid">
+                    <!-- Tarjeta 1 -->
+                    <article class="specialty__card reveal-up" style="--delay: 0.1s">
+                        <div class="specialty__img-box">
+                            <img src="torta1.jpeg" alt="Torta Red Velvet" class="specialty__img">
+                            <!-- PONER IMAGEN AQUI: reemplaza "torta1.jpeg" con la foto de tu torta 1 -->
+                            <div class="specialty__badge">Popular</div>
+                        </div>
+                        <div class="specialty__data">
+                            <h3 class="specialty__title">Choco Oreo</h3>
+                            <p class="specialty__description">Nuestra explosión de Oreo: Torta de chocolate extra
+                                húmeda, rellena con una generosa capa de crema cookies & cream y trozos de galleta Oreo.
+                            </p>
+                            <a href="#contacto" class="specialty__link">Encargar <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta 2 -->
+                    <article class="specialty__card reveal-up" style="--delay: 0.2s">
+                        <div class="specialty__img-box">
+                            <img src="torta2.jpeg" alt="Torta de Chocolate" class="specialty__img">
+                            <!-- PONER IMAGEN AQUI: reemplaza "torta2.jpeg" con la foto de tu torta 2 -->
+                        </div>
+                        <div class="specialty__data">
+                            <h3 class="specialty__title">Matilda</h3>
+                            <p class="specialty__description">Bizcocho húmedo de chocolate oscuro, bañado y relleno con
+                                una sedosa ganache artesanal de chocolate fundido. Una experiencia de puro cacao,
+                                cremosa y profunda.</p>
+                            <a href="#contacto" class="specialty__link">Encargar <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Tarjeta 3 -->
+                    <article class="specialty__card reveal-up" style="--delay: 0.3s">
+                        <div class="specialty__img-box">
+                            <img src="torta3.jpeg" alt="Macarons y postres" class="specialty__img">
+                            <!-- PONER IMAGEN AQUI: reemplaza "torta3.jpeg" con la foto de tu torta 3 -->
+                        </div>
+                        <div class="specialty__data">
+                            <h3 class="specialty__title">Choco Samba</h3>
+                            <p class="specialty__description">Bizcocho intenso de chocolate con capas de Samba troceada
+                                y crema de samba</p>
+                            <a href="#contacto" class="specialty__link">Encargar <i class="ri-arrow-right-line"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="about section" id="nosotros">
+            <div class="container grid about__container">
+                <div class="about__img-wrapper reveal-left">
+                    <img src="foto_nosotros.jpeg" alt="Preparación de tortas" class="about__img">
+                    <!-- PONER IMAGEN AQUI: reemplaza "foto_nosotros.jpeg" con una bonita foto de la tienda o tuya -->
+                    <div class="about__experience">
+                        <span class="experience__number">10+</span>
+                        <span class="experience__text">Años creando<br>sonrisas</span>
+                    </div>
+                </div>
+
+                <div class="about__data reveal-right">
+                    <span class="section__subtitle">Nuestra Historia</span>
+                    <h2 class="section__title">Amor y Dedicación en Cada Receta</h2>
+                    <p class="about__description">
+                        En 𝐒𝐭𝐞𝐟𝐲’𝐬 𝐃𝐨𝐥𝐜𝐞𝐳𝐳𝐚 creemos que una torta no es solo un postre, es el centro de
+                        tus celebraciones más importantes. Nos apasiona la repostería de autor, utilizando técnicas
+                        clásicas combinadas con el diseño contemporáneo para ofrecerte creaciones que son impactantes a
+                        la vista e inolvidables al paladar.
+                    </p>
+                    <ul class="about__list">
+                        <li><i class="ri-checkbox-circle-line"></i> Ingredientes de primer nivel.</li>
+                        <li><i class="ri-checkbox-circle-line"></i> Diseños 100% personalizados.</li>
+                        <li><i class="ri-checkbox-circle-line"></i> Cuidado minucioso en los detalles.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials section" id="testimonios">
+            <div class="container">
+                <div class="section__title-container align-center reveal-fade">
+                    <span class="section__subtitle">Reseñas</span>
+                    <h2 class="section__title">Nuestros Clientes Felices</h2>
+                </div>
+
+                <div class="testimonials__grid grid">
+                    <div class="testimonial__card reveal-up" style="--delay: 0.1s">
+                        <i class="ri-double-quotes-l testimonial__quote"></i>
+                        <p class="testimonial__text">La torta para mi boda fue un sueño. No solo el diseño era perfecto
+                            y súper elegante, sino que el sabor era increíble. ¡Todos los invitados quedaron
+                            maravillados!</p>
+                        <div class="testimonial__author">
+                            <div class="author__details">
+                                <h4>Valeria R.</h4>
+                                <span>Novia Feliz</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial__card reveal-up" style="--delay: 0.2s">
+                        <i class="ri-double-quotes-l testimonial__quote"></i>
+                        <p class="testimonial__text">Stefy superó mis expectativas. Hizo una mesa dulce completa para el
+                            cumpleaños de mi hija y literal parecía sacado de Pinterest. Recomendadísimo.</p>
+                        <div class="testimonial__author">
+                            <div class="author__details">
+                                <h4>Carlos M.</h4>
+                                <span>Cliente frecuente</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact/Order Section -->
+        <section class="contact section" id="contacto">
+            <div class="container reveal-fade">
+                <style>
+                    .contact__premium-card {
+                        background: linear-gradient(135deg, var(--first-color) 0%, var(--first-color-alt) 100%);
+                        border-radius: 2rem;
+                        padding: 4rem 2rem;
+                        text-align: center;
+                        position: relative;
+                        overflow: hidden;
+                        box-shadow: 0 20px 40px rgba(220, 150, 160, 0.3);
+                    }
+
+                    .contact__premium-card::before {
+                        content: '';
+                        position: absolute;
+                        top: -50%;
+                        left: -50%;
+                        width: 200%;
+                        height: 200%;
+                        background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
+                        opacity: 0.5;
+                        animation: rotate-bg 20s linear infinite;
+                    }
+
+                    .contact__premium-content {
+                        position: relative;
+                        z-index: 10;
+                    }
+
+                    .contact__premium-icon {
+                        font-size: 4rem;
+                        color: #fff;
+                        margin-bottom: 1rem;
+                        display: inline-block;
+                        animation: bounce-wa 2s infinite;
+                    }
+
+                    .btn--white {
+                        background-color: #fff;
+                        color: var(--first-color-alt);
+                        border-color: #fff;
+                        font-size: 1.1rem;
+                        padding: 1.25rem 2.5rem;
+                        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                    }
+
+                    .btn--white:hover {
+                        background-color: transparent;
+                        color: #fff;
+                        border-color: #fff;
+                    }
+
+                    @keyframes rotate-bg {
+                        from {
+                            transform: rotate(0deg);
+                        }
+
+                        to {
+                            transform: rotate(360deg);
+                        }
+                    }
+
+                    @keyframes bounce-wa {
+
+                        0%,
+                        100% {
+                            transform: translateY(0);
+                        }
+
+                        50% {
+                            transform: translateY(-10px);
+                        }
+                    }
+                </style>
+                <div class="contact__premium-card">
+                    <div class="contact__premium-content">
+                        <i class="ri-whatsapp-line contact__premium-icon"></i>
+                        <span class="section__subtitle" style="color: rgba(255,255,255,0.8); margin-bottom: 0;">PEDIDOS
+                            Y COTIZACIONES</span>
+                        <h2 class="section__title"
+                            style="color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-top: 0.5rem;">Haz
+                            Realidad Tu Torta Soñada</h2>
+                        <p class="contact__description"
+                            style="color: rgba(255,255,255,0.9); max-width: 600px; margin: 0 auto 2.5rem; font-size: 1.1rem;">
+                            ¿Tienes un evento acercándose? Escríbenos por WhatsApp con todos los detalles y diseñaremos
+                            juntos un dulce recuerdo inolvidable.
+                        </p>
+                        <!-- ENLACE DE WHATSAPP: Reemplazar numero_a_colocar_aqui con el número -->
+                        <a href="https://wa.me/numero_a_colocar_aqui" target="_blank" class="btn btn--white">
+                            Cotizar por WhatsApp <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">𝐒𝐭𝐞𝐟𝐲’𝐬 𝐃𝐨𝐥𝐜𝐞𝐳𝐳𝐚</a>
+                <p class="footer__description">
+                    Arte comestible para esos,<br>momentos que merecen celebrarse.
+                </p>
+                <div class="footer__socials">
+                    <a href="https://www.instagram.com/stefysdolcezza/" target="_blank" class="footer__social"><i
+                            class="ri-instagram-fill"></i></a>
+                    <a href="#" class="footer__social"><i class="ri-facebook-circle-fill"></i></a>
+                    <a href="#" class="footer__social"><i class="ri-pinterest-fill"></i></a>
+                </div>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Enlaces Rápidos</h3>
+                <ul class="footer__links">
+                    <li><a href="#inicio" class="footer__link">Inicio</a></li>
+                    <li><a href="#especialidades" class="footer__link">Especialidades</a></li>
+                    <li><a href="#nosotros" class="footer__link">Nuestra Historia</a></li>
+                    <li><a href="#contacto" class="footer__link">Cotizaciones</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Políticas</h3>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Términos y Condiciones</a></li>
+                    <li><a href="#" class="footer__link">Política de Envíos</a></li>
+                    <li><a href="#" class="footer__link">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom container">
+            <p>&#169; 2026 Stefy's Dolcezza. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll Up Button -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!-- Boton Flotante Whatsapp -->
+    <a href="https://wa.me/numero_a_colocar_aqui" target="_blank" class="whatsapp-float">
+        <i class="ri-whatsapp-line"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
